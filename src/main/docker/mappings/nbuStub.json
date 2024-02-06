@@ -1,0 +1,21 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPathPattern": "/NBUStatService/v1/statdirectory/exchange/"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": [
+      {
+        "r030": 36,
+        "txt": "Австралійський долар",
+        "rate": 1.11,
+        "cc": "AUD",
+        "exchangedate": "06.02.2024"
+      }
+    ],
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

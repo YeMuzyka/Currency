@@ -1,0 +1,10 @@
+version: '2'
+services:
+    postgres:
+        image: 'postgres:16.1-alpine3.19'
+        environment:
+            - 'POSTGRES_DB=databasecurrency'
+            - 'POSTGRES_PASSWORD=secretcurrency'
+            - 'POSTGRES_USER=usercurrency'
+        ports:
+            - '5432:5432'

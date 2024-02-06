@@ -1,0 +1,23 @@
+logging:
+  level:
+    ROOT: INFO
+    test.example.currency: INFO
+    test.example.currency.config.logging.FeignLogger: DEBUG
+    test.example.currency.config.logging.RequestResponseLoggingFilter: DEBUG
+
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/databasecurrency
+    username: usercurrency
+    password: secretcurrency
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+nbu:
+  url: https://bank.gov.ua
